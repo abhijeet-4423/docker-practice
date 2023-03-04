@@ -4,4 +4,8 @@ services:
     image: "mytomcat"
     ports:
       - "8080-8085:8080"
+  httpd:
+    image: "httpd"
+    ports:
+      - "80-85:80"
 
