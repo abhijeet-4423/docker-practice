@@ -9,6 +9,6 @@ services:
     ports:
       - "80-85:80"
     volumes:
-      - "/mnt/html:/usr/local/apache2/htdocs/"
+      - "/mnt/git/docker-practice/html:/usr/local/apache2/htdocs/"
       
 
