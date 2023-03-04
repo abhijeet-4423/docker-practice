@@ -8,6 +8,7 @@ pipeline{
   stages {
     stage ("stage-1"){
       steps { 
+        sh "rm -rf *"
         sh "git clone https://github.com/abhijeet-4423/docker-practice.git"
         dir ("docker-practice") { 
           sh "docker build -t mytomcat ." 
